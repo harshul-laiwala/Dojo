@@ -26,8 +26,8 @@ b = multiply(2,3);
 console.log(b);
 console.log(multiply(5,2));
 
-Prediction:
-Output:
+Prediction:x=2,y=3,b=6 ,x=5,y=2
+Output: 6, 10
 
 Challenge 4.
 var x = [1,2,3,4,5,10];
@@ -37,8 +37,8 @@ for(var i=0; i<5; i++)
    console.log(i);
 }
 
-Prediction:
-Output:
+Prediction:0,4,8
+Output:3,7
 
 
 Challenge 5.
@@ -52,16 +52,16 @@ console.log(x);
 awesome();
 console.log(x);
 
-Prediction:
-Output:
+Prediction:x=15,x=10
+Output:15,15,10,10
 
 Challenge 6.
 for(var i=0; i<15; i+=2){
    console.log(i);
 }
 
-Prediction:
-Output:
+Prediction:0,2,4,6,8,10,12,14,16
+Output:0,2,4,6,8,10,12,14
 
 Challenge 7.
 for(var i=0; i<3; i++){
@@ -70,8 +70,8 @@ for(var i=0; i<3; i++){
    }
 }
 
-Prediction:
-Output:
+Prediction:i=0,j=0;i=0,j=1;i=0,j=2;i=1,j=0;i=1,j=1;i=1,j=2;i=2,j=0;i=1,j=1;i=1,j=2;i=3
+Output:0,0,0,1,0,2
 
 Challenge 8.
 function looping(x,y){
@@ -85,12 +85,23 @@ z = looping(3,3);
 console.log(z);
 
 Prediction:
-Output:
+    x=3,y=3;
+    i=0,j=0;
+    i=0,j=1;
+    i=0,j=2;
+    i=1,j=0;
+    i=1,j=1;
+    i=1,j=2;
+    i=2,j=0;
+    i=2,j=1;
+    i=2,j=1;
+    i=2,j=2;
+Output:0,0,0,0,1,2,0,2,4
 
 Challenge 9.
 function looping(x,y){
-   for(var i=0; i<x; i++){
-      for(var j=0; j<y; j++){         
+   for(var i=0; i<3; i++){
+      for(var j=0; j<5; j++){         
          console.log(i*j);
       } 
    }
@@ -100,4 +111,23 @@ z = looping(3,5);
 console.log(z);
 
 Prediction:
-Output:
+    x=3,y=5;
+    i=0,j=0;
+    i=0,j=1;
+    i=0,j=2;
+    i=0,j=3;
+    i=0,j=4;
+    i=1,j=0;
+    i=1,j=1;
+    i=1,j=2;
+    i=1,j=3;
+    i=1,j=4;
+    i=2,j=0;
+    i=2,j=1;
+    i=2,j=2;
+    i=2,j=3;
+    i=2,j=4;
+    z=15
+    
+
+Output:0,0,0,0,0,0, 1,2 ,3 ,4 ,0,2,4,6,8,15

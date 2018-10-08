@@ -15,11 +15,14 @@
     padding: 10px
 }
 #side_nav{
-    background-color: aqua
+    background-color: aqua;
+    width: 200px;
+    display: inline-block;
 }
 #main_content{
     display: inline-block;
     background-color: aquamarine;
+    width: 750px;
 }
 ul li{
     color:yellow;
