@@ -13,11 +13,14 @@
     -webkit-border-radius: 10px;
     border-radius: 10px;
     padding: 10px
-    
 }
-#side_Nav{
-    display: inline-block;
+#side_nav{
+    background-color: aqua
 }
 #main_content{
     display: inline-block;
+    background-color: aquamarine;
+}
+ul li{
+    color:yellow;
 }
