@@ -19,13 +19,14 @@
     width: 200px;
     background-color: blue;
     display: inline-block;
+    vertical-align: top;
 }
 #main_content{
     min-height: 400px;
     width: 700px;
     background-color: red;
     display: inline-block;
-    vertical-align: 6.5em;
+    vertical-align: top;
 }
 .subcontents{
     min-height: 200px;
