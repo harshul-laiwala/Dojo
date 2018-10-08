@@ -28,8 +28,8 @@ for(var i=0; i<5; i++)
    i = i + 3; 
    console.log(i);
 }
-Prediction:
-Output:
+Prediction:0,4
+Output:3,7
 
 Challenge 5.
 function y(num1, num2){   
@@ -37,8 +37,9 @@ function y(num1, num2){
 }
 console.log(y(2,3))
 console.log(y(3,5))
-Prediction:
-Output:
+
+Prediction:2+3,3+5
+Output:5,8
 
 Challenge 6.
 function y(num1, num2){
@@ -48,8 +49,8 @@ function y(num1, num2){
 console.log(y(2,3))
 console.log(y(3,5))
 
-Prediction:
-Output:
+Prediction:2+3, 3+5
+Output:2,5,3,8
 
 Challenge 7.
 a = 15;
@@ -61,8 +62,8 @@ function y(a){
 b = y(10);
 console.log(b);
 
-Prediction:
-Output:
+Prediction:a=15,a=10, b=10
+Output:15,10,10
 
 Challenge 8.
 a = 15;
@@ -74,5 +75,5 @@ function y(a){
 b = y(10);
 console.log(b);
 
-Prediction:
-Output:
+Prediction:a=15, a=10 , b=20
+Output:15,10, 20
