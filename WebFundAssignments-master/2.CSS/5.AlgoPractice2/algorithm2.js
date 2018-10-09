@@ -25,7 +25,9 @@ function printSum(x){
   function printSumArray(x){
     var sum = 0;
     for(var i=0; i<x.length; i++) {
-      //your code here
+      if(x[i]>sum){
+          sum=x[i];
+      }
     }
     return sum;
   }
