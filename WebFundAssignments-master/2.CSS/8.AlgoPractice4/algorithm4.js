@@ -43,8 +43,22 @@ function replaceNegatives(x){
 }
 replaceNegatives([1,-1,-2]);
 
+// Challenege 4 : Solution 1
 function removeVals(arr,startindex,endindex){
     arr.splice(startindex,(endindex-startindex)+1);
     console.log(arr);
 }
 removeVals([20,30,40,50,60,70],2,3);
+
+// Challenege 4 : Solution 2
+function removeVals(x,startindex,endindex){
+    var newarr=[];
+    for(i=0;i<startindex;i++){
+        newarr.push(x[i]);
+    }
+    for(i=x.length-1;i>endindex;i--){
+        newarr.push(x[i]);
+    }
+    console.log(newarr);
+}
+removeVals([20,30,40,50,60,70],2,2);
