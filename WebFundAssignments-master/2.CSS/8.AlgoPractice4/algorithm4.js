@@ -44,7 +44,7 @@ function replaceNegatives(x){
 replaceNegatives([1,-1,-2]);
 
 function removeVals(arr,startindex,endindex){
-    arr.splice(startindex,(endindex-startindex));
+    arr.splice(startindex,(endindex-startindex)+1);
     console.log(arr);
 }
 removeVals([20,30,40,50,60,70],2,3);
