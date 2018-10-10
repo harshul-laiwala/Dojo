@@ -123,5 +123,5 @@ function sum(x){
     return sum;
 }
 
-Prediction:
-Output:
+Prediction: 
+Output: undefined
