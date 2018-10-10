@@ -15,7 +15,7 @@ function MaxMinAvgValues(x){
     var minValue=0;
     var avgValue=0;
     var sum=0;
-    for(i=0;i<=x.length;i++){
+    for(i=0;i<=x.length-1;i++){
         if(x[i]>maxValue){
             maxValue=x[i];
         }
