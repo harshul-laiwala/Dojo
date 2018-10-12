@@ -1,29 +1,35 @@
 /* Build your CSS from scratch in this file */
+*{
+    margin:0px;
+    padding:0px;
+    outline: 1px dashed red;
+}
 #wrapper{
-    width: 970px;
+    width: 1000px;
+    padding: 20px;
     background-color: rgb(6, 39, 100);
-    margin: 15px;
+    border:1px;
 }
 #header{
     background-color: red;
     /* margin: 15px; */
-    margin-top: 15px;
-    padding: 15px;
-    -moz-border-radius: 10px; 
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    padding: 10px
+    padding: 10px;
+    border:1px;
+    border-radius:5px;
+
 }
 #side_nav{
     background-color: aqua;
-    width: 200px;
     display: inline-block;
+    border:1px;
+
 }
 #main_content{
     display: inline-block;
     background-color: aquamarine;
-    width: 750px;
+    border-radius:5px;
+    
 }
 ul li{
-    color:yellow;
+    
 }
