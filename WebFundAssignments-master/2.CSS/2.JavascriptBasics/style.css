@@ -2,34 +2,49 @@
 *{
     margin:0px;
     padding:0px;
-    outline: 1px dashed red;
+    /* outline: 1px dashed red; */
 }
 #wrapper{
-    width: 1000px;
+    width: 970PX;
     padding: 20px;
     background-color: rgb(6, 39, 100);
-    border:1px;
 }
 #header{
     background-color: red;
-    /* margin: 15px; */
     padding: 10px;
     border:1px;
-    border-radius:5px;
+    border-radius:15px;
+    margin: 10px;   
 
 }
 #side_nav{
     background-color: aqua;
     display: inline-block;
-    border:1px;
-
+    border-radius:15px;
+    width: 230px;
+    padding: 20px;
+    font-size: 12px;
+    vertical-align: top;
+    margin: 10px;
 }
+    #side_nav ul{
+        padding-left: 10px;
+    }
 #main_content{
-    display: inline-block;
+    display: inline-block;    
     background-color: aquamarine;
-    border-radius:5px;
+    border-radius:15px;
+    padding: 20px;
+    width: 610px;
+    margin: 10px;
+
     
 }
-ul li{
-    
+
+#footer{
+    background-color: grey;
+    text-align: left;
+    text-decoration: whitesmoke;
+    padding: 15px;
+    border-radius: 15px;
 }
