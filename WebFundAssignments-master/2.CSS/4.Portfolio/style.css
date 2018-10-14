@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding:0px;
+    /* outline: 1px dashed red; */
+
+
+}
+.site-wrapper{
+    width:1000px;
+    margin: 10px auto;
+    background-color: #614c56;
+}
+.header{
+    background-color: #e0e5e8;
+    padding:10px;
+    margin-bottom: 10px;
+}
+    .header h2{
+        display: inline-block;
+        font-family: sans-serif;
+        margin: 0 590px 0 0;
+    }
+    .header h4{
+        display: inline-block;
+        text-align: right;
+    }
+.main-content{
+    padding:20px;
+}
+.About{
+    display: inline-block;
+    width: 520px;
+    padding-bottom:45px;
+    vertical-align: top;
+    background-color: #ece5ec;
+    
+}
+    .About h5{
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color:grey;
+    }
+    .About p{
+        display: inline-block;
+        padding: 10px;
+        font-family: sans-serif;
+        
+    }
+    .About a{
+        color: black;
+        text-align: left;
+        padding: 10px;
+    }
+
+img{
+    width: 400px;
+    border: 5px solid;
+    border-color: whitesmoke;
+    margin-left: 20px;
+}
