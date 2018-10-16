@@ -32,14 +32,6 @@ function a(b){
 //Prediction: b=3 , b=9
 //Output: 3 , 9
 
-function a(b){
-        console.log(b);
-        return b*3;
-    }
-console.log(a(3));
-//Prediction:
-//Output:
-
 
 function a(b){
     if(b<10) {
@@ -51,8 +43,8 @@ function a(b){
     console.log(b);
 }
 console.log(a(15));
-//Prediction:
-//Output:
+//Prediction:b=15, 
+//Output: 4 
 
 
 function a(b,c){
@@ -60,8 +52,8 @@ function a(b,c){
 }
 console.log(10,3);
 console.log( a(3,10) );
-//Prediction:
-//Output:
+//Prediction:b=10, c=3 ; b=3, c=10
+//Output: 30, 30
 
 
 function a(b){
@@ -72,8 +64,8 @@ function a(b){
 }
 console.log(3);
 console.log(4);
-//Prediction:
-//Output:
+//Prediction:b=3
+//Output:0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9
 
 
 function a(){
@@ -83,8 +75,8 @@ function a(){
     }
 }
 a();
-//Prediction:
-//Output:
+//Prediction:0,2,4,8
+//Output: 0,2,4,8
 
 
 function a(b,c){
@@ -95,20 +87,20 @@ function a(b,c){
 }
 a(0,10);
 console.log(a(0,10));
-//Prediction:
-//Output:
+//Prediction:b=0,c=10 ,i=0;1;2;3;4;5;6;7;8;9;10
+//Output:0,1,2,3,4,5,7,8,9,0,1,2,3,4,5,7,8,9,0
 
 
 function a(){
     for(var i=0; i<10; i++){
-       for(var j=0; j<10; j++){
-           console.log(j);
-       }
-       console.log(i);
+        for(var j=0; j<10; j++){
+            console.log(j);
+        }
+        console.log(i);
     }
 }
 //Prediction:
-//Output:
+//Output: no output since function is never called 
 
 
 function a(){
@@ -120,18 +112,17 @@ function a(){
     }
 }
 //Prediction:
-//Output:
+//Output: no output since function is never called 
 
 
 var z = 10;
-
 function a(){
     var z = 15;
     console.log(z);
 }
 console.log(z);
-//Prediction:
-//Output:
+//Prediction:z=10
+//Output: 10
 
 
 var z = 10;
@@ -141,8 +132,8 @@ function a(){
 }
 a();
 console.log(z);
-//Prediction:
-//Output:
+//Prediction: z=10 ; z=15
+//Output: 15,10
 
 
 
@@ -154,6 +145,6 @@ function a(){
 }
 z = a();
 console.log(z);
-// //Prediction:
-// //Output:
+// //Prediction: z=10; z=15
+// //Output: 15, 15
         
