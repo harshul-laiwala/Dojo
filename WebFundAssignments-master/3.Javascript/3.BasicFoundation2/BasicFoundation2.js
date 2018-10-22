@@ -101,8 +101,21 @@ function PreviousLengths(x){
 }
 console.log(PreviousLengths(["hello","coding","dojo", "awesome"]));
 // Add Seven to Most - Build a function that accepts array. Return a new array with all values except first, adding 7 to each. Do not alter the original array.
+function AddSevenToMost(x){
+    var returnArray = x;
+    for(i=1;i<x.length;i++){
+        returnArray.push(x[i]+7);
+    }
+    return returnArray;
+}
+console.log(AddSevenToMst([1,2,3,4,5]));
 
 // Reverse Array - Given an array, write a function that reverses values, in-place.  Example: reverse([3,1,6,4,2]) return same array, containing [2,4,6,1,3].  Do this without creating an empty temporary array.  (Hint: you'll need to swap values).
+
+function ReverseArray(x){
+    
+
+}
 
 // Outlook: Negative - Given an array, create and return a new one containing all the values of the provided array, made negative (not simply multiplied by -1). Given [1,-3,5], return [-1,-3,-5].
 
@@ -124,6 +137,30 @@ AlwaysHungry([1,2,3,4]);
 AlwaysHungry(["food",2,3,4]);
 
 // Swap Toward the Center - Given array, swap first and last, third and third-to-last, etc.  Input[true,42,"Ada",2,"pizza"] becomes ["pizza", 42, "Ada", 2, true].  Change [1,2,3,4,5,6] to [6,2,4,3,5,1].
+function SwaoTowardCenter(x){
+    var first = x[0];
+    var last = x[x.length-1];
+    var third = x[2];
+    var thirdLast=x[x.length-4];
+    var temp=0;
+    console.log("first"+first);
+    console.log("last"+last);
+    console.log("third"+third);
+    console.log("thirdLast"+thirdLast);
+    temp=first;
+    first=last;
+    last=temp;
+    console.log("first"+first);
+    console.log("last"+last);
+    temp=third;
+    third=thirdLast;
+    thirdLast=temp;
+    console.log("third"+third);
+    console.log("thirdLast"+thirdLast);
+    return x;
+}
+console.log(SwaoTowardCenter([true,42,"Ada",2,"pizza"]));
+
 
 // Scale the Array - Given an array arr and a number num, multiply all values in arr by num, and return the changed array arr.  For example, scaleArray([1,2,3],3) should return [3,6,9].
 function ScaleArray(inputArr , num){
