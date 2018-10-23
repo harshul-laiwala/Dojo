@@ -9,9 +9,22 @@
 // John - 30
 // David - 27
 
-var users = [
-    {name: "Michael", age:37}, 
-    {name: "John", age:30}, 
-    {name: "David", age:27}
-];
-console.log(user.name)
+function PlayingWithObjects(){
+    var users = [
+        {name: "Michael", age:37}, 
+        {name: "John", age:30}, 
+        {name: "David", age:27}
+    ]; 
+
+    for (var userindex in users ){
+        if (users[userindex].name == "John"){
+            console.log("John's Age is "+users[userindex].age)
+        }
+    }
+    console.log("Name of the first Object is: " +users[0].name);
+    
+    for(var userindex in users){
+        console.log(users[userindex].name+ " - " + users[userindex].age );
+    }
+}
+PlayingWithObjects();
