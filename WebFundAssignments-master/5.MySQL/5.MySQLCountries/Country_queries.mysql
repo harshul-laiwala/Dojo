@@ -12,7 +12,11 @@ select cities.name,cities.population from cities
 	where population > 500000 and country_id IN (select countries.id from countries where countries.name='Mexico')
     order by population desc;
 
-
+ 
+select countries.name, languages.language, languages.percentage from languages 
+	left join countries on countries.id = languages.country_id 
+    where languages.percentage > 89
+    order by languages.percentage desc; 
 
 
 
