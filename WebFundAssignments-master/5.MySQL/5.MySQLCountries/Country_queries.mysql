@@ -4,9 +4,15 @@ select countries.name , languages.percentage,languages.language from languages
      order by languages.percentage desc;
 
 select countries.name , count(cities.country_code) from cities 
-	join countries ON cities.country_id = countries.id
+	right join countries ON cities.country_id = countries.id
 	group by cities.country_code 
     order by count(cities.country_code) desc;
+
+select cities.name,cities.population from cities 
+	where population > 500000 and country_id IN (select countries.id from countries where countries.name='Mexico')
+    order by population desc;
+
+
 
 
 
