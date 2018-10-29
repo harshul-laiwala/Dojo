@@ -1,0 +1,10 @@
+{% extends './layout.html' %}
+{% block body %}
+  <h1>{{ user.first_name }} {{ user.last_name }}</h1>
+  <h2>People this user has mutually matched with.</h2>
+  <ul>
+    {% for user in mutual_matches %}
+      <li>{{ user.first_name }} {{ user.last_name }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

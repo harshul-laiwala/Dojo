@@ -1,5 +1,3 @@
-
-*.bak
 flaskEnv/
 *.pyc
 .vscode/
