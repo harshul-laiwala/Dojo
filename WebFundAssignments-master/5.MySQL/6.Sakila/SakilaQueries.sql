@@ -8,10 +8,14 @@ select customer.first_name , customer.last_name, customer.email , address.addres
 
 -- 2. What query would you run to get all comedy films? Your query would return film title, description, release year,
 -- rating, special features and genre.
-
+select film.title , film.description , film.release_year, film.rating , film.special_features , category.name as genre from film
+	join film_category on film.film_id = film_category.film_id
+    join category on film_category.category_id = category.category_id
+    where category.name = 'Comedy';
 
 -- 3. What query would you run to get all the films joined by actor_id=5? Your query shoud return the film title,
 -- description and release year.
+
 
 -- 4. What query would you run to get all the customers in store_id = 1 and inside these cities (1, 42, 312 and 459)?
 -- Your query should return customer first name, last name, email, and address.
